@@ -1,0 +1,1313 @@
+@charset "utf-8";
+body,
+p,
+h1,
+h2,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #f6f6f6;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*顶部导航栏*/
+header {
+  font-size: 12px;
+  background-color: white;
+}
+.topNav {
+  width: 100%;
+  height: 36px;
+  background-color: #f4f4f4;
+}
+.top {
+  display: flex;
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.iconfont {
+  display: inline-block;
+  font-size: 14px;
+}
+.icon-choose {
+  font-size: 12px;
+}
+/*顶部左侧导航*/
+.navLeft {
+  position: relative;
+  display: flex;
+  width: 20%;
+  height: 36px;
+  justify-content: space-between;
+}
+.navLeft > li {
+  line-height: 36px;
+  color: #666;
+}
+.navLeft > .cn {
+  position: relative;
+  border: 1px solid transparent;
+  cursor: default;
+}
+.cn:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 30px 4px #ccc;
+}
+.navLeft > .cn:hover .icon-choose {
+  transform: rotate(180deg);
+}
+.navLeft > .cn > .checkLanguage {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  width: 519px;
+  height: 252px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  justify-content: flex-end;
+  z-index: 2;
+}
+.cn:hover > ul.checkLanguage {
+  display: block;
+}
+.checkLanguage > li {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 170px;
+  margin-right: 3px;
+}
+.checkLanguage > li:hover {
+  background-color: #ccc;
+}
+.checkLanguage > li > a {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  color: #4c4c4c;
+  background: url("../images/lang.png") no-repeat 4px 8px;
+}
+/*顶部右侧导航*/
+.icon-shouji-copy,
+.icon-weixin {
+  font-size: 15px;
+  color: #2577e3;
+}
+.icon-xinxi1 {
+  padding-right: 4px;
+}
+.icon-hanglixiang {
+  color: #2577e3;
+}
+.navRight {
+  position: relative;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  z-index: 2;
+}
+.navRight > li {
+  text-align: center;
+}
+.navRight > li + li > a {
+  display: block;
+  line-height: 36px;
+  color: #666666;
+}
+/*登录*/
+.navRight > .log {
+  width: 84px;
+  line-height: 36px;
+  text-align: center;
+}
+.navRight > .log > .login {
+  color: #2577e3;
+}
+/*注册*/
+.navRight > .reg {
+  width: 81px;
+}
+.reg:hover > a {
+  color: #2577e3;
+}
+/*消息*/
+.navRight > .msg {
+  width: 75px;
+}
+.navRight > li > a.msg:hover {
+  color: #2577e3;
+}
+/*我的携程和我的订单*/
+.navRight > .myXc,
+.navRight > .order {
+  position: relative;
+  width: 100px;
+  border: 1px solid transparent;
+}
+.xcMsg {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  width: 100%;
+  height: 120px;
+  line-height: 30px;
+  border: 1px solid #cccccc;
+}
+.orderMsg {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  width: 120px;
+  height: 180px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+}
+.myXc > .xcMsg > li > a,
+.order > .orderMsg > li > a {
+  color: #666;
+}
+.orderMsg > li > a {
+  display: inline-block;
+  width: 84px;
+}
+.orderMsg > li > .last {
+  border-top: 1px solid #ccc;
+}
+.myXc:hover,
+.order:hover {
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.myXc:hover .icon-choose,
+.order:hover .icon-choose {
+  transform: rotate(180deg);
+}
+.myXc:hover > .xcMsg,
+.order:hover > .orderMsg {
+  display: block;
+  background-color: white;
+}
+/*客服中心*/
+.navRight > .service {
+  width: 81px;
+}
+.service:hover > a {
+  color: #2577e3;
+}
+/*携程商旅*/
+.navRight > .xcSl {
+  position: relative;
+  width: 124px;
+  border: 1px solid transparent;
+}
+.xcSl > .tripMsg {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  width: 100%;
+  height: 90px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+}
+.xcSl:hover {
+  background-color: #2577e3;
+}
+.xcSl:hover > .xcTrip > span,
+.xcSl:hover .icon-hanglixiang {
+  color: white;
+}
+.xcSl:hover .icon-choose {
+  color: white;
+  transform: rotate(180deg);
+}
+.xcSl:hover > .tripMsg {
+  display: block;
+  color: #666;
+  background-color: white;
+}
+.navRight > .xcSl > .xcTrip {
+  color: #2577e3;
+}
+/*微信手机二维码*/
+.navRight > .app,
+.navRight > .weChat {
+  position: relative;
+  width: 42px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.app:hover,
+.weChat:hover {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid white;
+  background-color: white;
+}
+.appBox {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: -1px;
+  width: 144px;
+  height: 190px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.app:hover .appBox {
+  display: block;
+}
+.appBox > .appCode {
+  padding: 15px 15px 10px;
+  color: #666666;
+}
+.appBox > .appBan {
+  width: 100%;
+  height: 32px;
+  color: white;
+  text-align: center;
+  background-color: #2477e3;
+  opacity: 0.6;
+}
+.appBan > a {
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  color: white;
+}
+.icon-jiantouxiangyou {
+  font-size: 10px;
+  color: white;
+}
+.weChatBox {
+  display: none;
+  position: absolute;
+  top: 34px;
+  right: -1px;
+  width: 144px;
+  height: 181px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.weChat:hover .weChatBox {
+  display: block;
+}
+.weChatBox > .weChatCode > img {
+  padding: 16px 16px 0;
+}
+.weChatCode > p {
+  color: #666;
+  line-height: 21px;
+}
+.weChatCode > p > span {
+  color: orange;
+}
+/*第二行导航栏*/
+.logNav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+/*log图片*/
+.box {
+  display: flex;
+  position: relative;
+  max-width: 1180px;
+  min-width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+.leftBox {
+  position: relative;
+  display: flex;
+  width: 48%;
+  height: 100%;
+  justify-content: space-between;
+}
+.logo {
+  width: 126px;
+  height: 43px;
+  padding: 18px 0;
+}
+.leftBox > .logo > a {
+  display: inline-block;
+  width: 126px;
+  height: 43px;
+  text-indent: -9999px;
+  background: url("../images/logo.png") no-repeat;
+}
+/*搜索框*/
+.leftBox > input {
+  position: absolute;
+  top: 0;
+  left: 176px;
+  right: 0;
+  bottom: 0;
+  width: 362px;
+  height: 25px;
+  margin: auto;
+  padding: 0 0 0 5px;
+  border: 1px solid #8ebefc;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 2px 2px 1px 0 rgba(164, 203, 255, 0.25);
+}
+.leftBox > button {
+  position: absolute;
+  top: 28px;
+  right: 12px;
+  width: 42px;
+  height: 25px;
+  color: white;
+  border-style: none;
+  text-align: center;
+  background-color: #8ebefc;
+  cursor: pointer;
+}
+.leftBox > button:hover {
+  background-color: #2577e3;
+}
+.leftBox > input:focus ~ button {
+  background-color: #2577e3;
+}
+.leftBox > input:focus ~ button:hover {
+  background-color: deepskyblue;
+}
+/*telephoneNumber*/
+.phone {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 10px 15px 0;
+  border: 1px solid transparent;
+  z-index: 1;
+}
+.phone:hover {
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.phone > li {
+  font-size: 12px;
+  color: #666666;
+  line-height: 20px;
+  text-align: right;
+}
+.phone ~ i.icon-choose {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+}
+ul.phone:hover ~ i.icon-choose {
+  color: #666666;
+  transform: rotate(180deg);
+}
+.phoneNumber {
+  display: none;
+}
+.phone:hover > .phoneNumber {
+  display: block;
+}
+/*第三行导航栏*/
+.goods {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: #2577e3;
+}
+.goods > .checkTip {
+  display: flex;
+  width: 1180px;
+  height: 40px;
+  align-items: center;
+  margin: 0 auto;
+}
+.goods > .checkTip > li > a {
+  display: block;
+  height: 40px;
+  padding: 0 9px;
+  line-height: 40px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+.checkTip > li + li.public {
+  position: relative;
+}
+.checkTip > li + li:hover {
+  background-color: #0a56bb;
+}
+.checkTip > li > a > .iconfont {
+  display: inline-block;
+  padding: 0 1.5px 0;
+  transition: 0.15s ease;
+  color: white;
+}
+.checkTip > li > a:hover .icon-choose {
+  transform: rotate(540deg);
+}
+.checkTip > li:first-child {
+  background-color: #0a56bb;
+}
+/*public css样式*/
+.public:before {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent white transparent;
+}
+.public > nav {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 1178px;
+  height: 37px;
+  background-color: white;
+  border: 1px solid;
+  border-color: transparent #007aff #007aff #007aff;
+  z-index: 2;
+}
+.public > nav > ul {
+  display: flex;
+  float: right;
+  height: 37px;
+  line-height: 37px;
+  justify-content: right;
+}
+.public > nav > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 37px;
+}
+.public > nav > ul ~ a {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 13px;
+  color: #000;
+  text-align: center;
+}
+.public > nav > ul > li > a > span {
+  font-size: 13px;
+  color: black;
+  padding: 0 8px;
+  border-left: 1px solid #cccccc;
+}
+.public > nav > ul > li:nth-child(1) > a > span {
+  border: none;
+}
+.public:hover > nav,
+.public:hover:before {
+  display: block;
+}
+.public:hover > nav > ul > li:hover span {
+  color: #007aff;
+}
+/*酒店*/
+.hotel > nav {
+  left: -48px;
+}
+.hotel > nav > ul {
+  float: left;
+}
+.hotel > nav > ul ~ a:hover,
+.hotel > nav > ul ~ a:hover .icon-jiudian {
+  color: #007aff;
+}
+.hotel > nav > ul ~ a > i.icon-jiudian {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*旅游*/
+.ly > nav {
+  left: -115px;
+}
+.ly > nav > ul {
+  float: left;
+}
+.ly > nav > ul ~ a:hover,
+.ly > nav > ul ~ a:hover .icon-lvyou {
+  color: #007aff;
+}
+.ly > nav > ul ~ a > i.icon-lvyou {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*机票*/
+.airTicket > nav {
+  left: -308px;
+}
+.airTicket > nav > ul {
+  float: left;
+}
+.airTicket > nav > ul ~ a:hover,
+.airTicket > nav > ul ~ a:hover .icon-feiji {
+  color: #007aff;
+}
+.airTicket > nav > ul ~ a > i.icon-feiji {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*火车*/
+.train > nav {
+  left: -375px;
+}
+.train > nav > ul {
+  float: left;
+}
+.train > nav > ul ~ a:hover,
+.train > nav > ul ~ a:hover .icon-huoche {
+  color: #007aff;
+}
+.train > nav > ul ~ a > i.icon-huoche {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*汽车·船*/
+.ship > nav {
+  left: -442px;
+}
+.ship > nav > ul {
+  float: left;
+  padding-left: 330px;
+}
+.ship > nav > ul ~ a:hover,
+.ship > nav > ul ~ a:hover .icon-iconfont222222223 {
+  color: #007aff;
+}
+.ship > nav > ul ~ a > i.icon-iconfont222222223 {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*用车*/
+.car > nav {
+  left: -536px;
+}
+.car > nav > ul {
+  margin-right: 218px;
+}
+.car > nav > ul ~ a:hover,
+.car > nav > ul ~ a:hover .icon-qiche {
+  color: #007aff;
+}
+.car > nav > ul ~ a > i.icon-qiche {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*门票*/
+.ticket > nav {
+  left: -603px;
+}
+.ticket > nav > ul {
+  margin-right: 182px;
+}
+.ticket > nav > ul ~ a:hover,
+.ticket > nav > ul ~ a:hover .icon-menpiao {
+  color: #007aff;
+}
+.ticket > nav > ul ~ a > i.icon-menpiao {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*全球购*/
+.buying > nav {
+  right: -380px;
+}
+.buying > nav > ul {
+  margin-right: 136px;
+}
+.buying > nav > ul ~ a:hover,
+.buying > nav > ul ~ a:hover .icon-xiaotequan-waibiduihuan {
+  color: #007aff;
+}
+.buying > nav > ul ~ a > i.icon-xiaotequan-waibiduihuan {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*礼品卡*/
+.giftCard > nav {
+  right: -298px;
+}
+.giftCard > nav > ul {
+  margin-right: 120px;
+}
+.giftCard > nav > ul ~ a:hover,
+.giftCard > nav > ul ~ a:hover .icon-lipinka {
+  color: #007aff;
+}
+.giftCard > nav > ul ~ a > i.icon-lipinka {
+  font-size: 16px;
+  color: lightskyblue;
+}
+/*更多*/
+.gDuo > nav {
+  right: -72px;
+}
+/*第四导航栏*/
+.trip {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  background-color: white;
+}
+.trip > .tripCheck {
+  display: flex;
+  width: 1180px;
+  height: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+.tripCheck > li {
+  margin-right: 10px;
+}
+.tripCheck > h2 {
+  position: relative;
+  height: 22px;
+  padding: 0 4px 0 3px;
+  margin-right: 8px;
+  line-height: 22px;
+  font-size: 13px;
+  color: white;
+  background-color: #74a8ed;
+  border-radius: 2px;
+}
+.icon-yousanjiao {
+  position: absolute;
+  right: -10%;
+  font-size: 10px;
+  color: #74a8ed;
+}
+/*header图标不可删除*/
+.icon-jiudian,
+.icon-feiji,
+.icon-qiche,
+.icon-huoche,
+.icon-chujingyou,
+.icon-gaoduanyou,
+.icon-menpiao,
+.icon-qianzhenggonglve,
+.icon-baoxian,
+.icon-wifiwofi,
+.icon-xiaotequan-jingwaijiesongjizhe {
+  padding-right: 2px;
+  font-size: 18px;
+  color: #007aff;
+}
+.icon-xiaotequan-waibiduihuan {
+  padding-right: 2px;
+  font-size: 18px;
+  color: green;
+}
+.tripCheck > li > a {
+  color: black;
+}
+.tripCheck > li > a:hover {
+  color: #007aff;
+}
+/*轮播图部分*/
+/*分页器样式*/
+.swiper-container {
+  --swiper-pagination-color: white;
+}
+.main {
+  position: relative;
+  width: 100%;
+}
+/*轮播图样式*/
+.main > .bannerForm {
+  width: 100%;
+  height: 340px;
+}
+.bannerForm > .swiper-container {
+  height: 100%;
+}
+.bannerForm > .swiper-container > .swiper-wrapper {
+  height: 100%;
+}
+.swiper-wrapper > .swiper-slide {
+  background: url("../images/banner1.jpg") no-repeat center / cover;
+}
+.swiper-wrapper > .swiper-slide:nth-child(2) {
+  background-image: url("../images/banner2.jpg");
+}
+.swiper-wrapper > .swiper-slide:nth-child(3) {
+  background-image: url("../images/banner3.jpg");
+}
+.swiper-wrapper > .swiper-slide:nth-child(4) {
+  background-image: url("../images/banner4.jpg");
+}
+.swiper-pagination-bullet {
+  opacity: 0.8;
+}
+.swiper-container > .swiper-pagination > .swiper-pagination-bullet {
+  border: 2px solid white;
+}
+.swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 10px;
+}
+/*表单*/
+.menu {
+  position: absolute;
+  top: 0;
+  left: 85px;
+  width: 1180px;
+  height: 341px;
+  z-index: 1;
+}
+.menuMessage {
+  position: absolute;
+  top: 20px;
+  width: 70px;
+  height: 300px;
+  background-color: #f66;
+  z-index: 1;
+}
+.checkMessage > li {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 43px;
+  border-left: 4px solid #ff9915;
+  z-index: 2;
+}
+.checkMessage > li > b {
+  display: block;
+  width: 70px;
+  height: 42px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 42px;
+  padding: 0 7px 0 13px;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+  color: white;
+  background-color: #2577e3;
+}
+.checkMessage > .first > b {
+  background-color: white;
+  color: #007aff;
+}
+.checkMessage > li + li:hover > b {
+  cursor: pointer;
+  color: #007aff;
+  background-color: white;
+}
+.checkMessage > .first {
+  background-color: white;
+}
+.first > section {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: 490px;
+  height: 271px;
+  padding: 15px;
+  background-color: white;
+}
+.first > section > ul > li {
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 24px;
+  text-align: center;
+}
+.first > section > ul > li::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 36px;
+  border: 4px solid;
+  border-color: #007aff transparent transparent transparent;
+}
+.first > section > ul > li:hover::after {
+  display: block;
+}
+.first > section > ul > li > a {
+  display: inline-block;
+  width: 80px;
+  height: 24px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 2px solid #ccc;
+}
+.first > section > ul > li:hover > a {
+  color: #007aff;
+  border-bottom: 2px solid #007aff;
+}
+.first > section > ul > li > form {
+  margin-top: 10px;
+  width: 490px;
+  height: 234px;
+  line-height: 40px;
+}
+/*目的地*/
+.first > section > ul > li > form > section:first-of-type {
+  position: relative;
+  font-size: 14px;
+  height: 40px;
+}
+.first > section > ul > li > form > section:first-of-type > span {
+  padding-right: 6px;
+}
+.first > section > ul > li > form > section:first-of-type > input {
+  width: 406px;
+  height: 24px;
+  padding-left: 4px;
+  border: 1px inset #ccc;
+}
+.first > section > ul > li > form > section:first-of-type > input ~ section {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 65px;
+  width: 390px;
+  height: 160px;
+  padding: 10px;
+  border: 1px solid #999;
+  background-color: white;
+  z-index: 2;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input:focus
+  ~ section {
+  display: block;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > div {
+  height: 20px;
+  font-size: 12px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > div
+  > span {
+  display: inline-block;
+  line-height: 20px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > div
+  > span:first-child {
+  float: left;
+  color: #999999;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > div
+  > span:last-child {
+  float: right;
+  color: #666;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > section {
+  width: 100%;
+  height: 140px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > section
+  > ul {
+  width: 100%;
+  height: 20px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > section
+  > ul
+  > li {
+  float: left;
+  width: 55px;
+  height: 20px;
+  line-height: 20px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > section
+  > ul
+  > li
+  > a {
+  display: inline-block;
+  width: 55px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  border-bottom: 2px solid #999999;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > .place
+  > ul
+  > li
+  > a
+  > ul {
+  width: 386px;
+  height: 118px;
+  margin-top: 5px;
+  line-height: 24px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > .place
+  > ul
+  > li
+  > a
+  > ul
+  > li {
+  float: left;
+  width: 64px;
+  line-height: 26px;
+  font-weight: normal;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > .place
+  > ul
+  > li
+  > a
+  > ul
+  > li:hover {
+  color: white;
+  background-color: #007aff;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:first-of-type
+  > input
+  ~ section
+  > section
+  > ul
+  > li
+  > a:hover {
+  font-weight: bold;
+  color: #007aff;
+  border-bottom: 2px solid #007aff;
+}
+
+/*入住日期*/
+.first > section > ul > li > form > section:nth-of-type(2) {
+  float: left;
+  font-size: 14px;
+  width: 240px;
+  height: 40px;
+}
+.first > section > ul > li > form > section:nth-of-type(2) > input {
+  width: 166px;
+  height: 26px;
+  border: 1px inset #ccc;
+}
+/*退房日期*/
+.first > section > ul > li > form > section:nth-of-type(3) {
+  float: left;
+  font-size: 14px;
+  width: 240px;
+  height: 40px;
+}
+.first > section > ul > li > form > section:nth-of-type(3) > input {
+  width: 166px;
+  height: 26px;
+  border: 1px inset #ccc;
+}
+/*房间数*/
+.first > section > ul > li > form > section:nth-of-type(4) {
+  float: left;
+  font-size: 14px;
+  width: 240px;
+  height: 40px;
+}
+.first > section > ul > li > form > section:nth-of-type(4) > span {
+  padding-right: 13px;
+}
+.first > section > ul > li > form > section:nth-of-type(4) > select {
+  width: 170px;
+  height: 28px;
+  border: 1px inset #ccc;
+}
+/*住客数*/
+.first > section > ul > li > form > section:nth-of-type(5) {
+  position: relative;
+  float: left;
+  font-size: 14px;
+  width: 240px;
+  height: 40px;
+}
+.first > section > ul > li > form > section:nth-of-type(5) > span {
+  padding: 0 8px;
+}
+.first > section > ul > li > form > section:nth-of-type(5) > input {
+  width: 168px;
+  height: 24px;
+  border: 1px inset #ccc;
+}
+.first > section > ul > li > form > section:nth-of-type(5) > input ~ section {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: 66px;
+  width: 228px;
+  height: 178px;
+  padding: 10px;
+  border: 1px solid #999999;
+  background-color: white;
+  cursor: default;
+  z-index: 2;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > ul {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #666;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > ul
+  > li {
+  text-align: left;
+  line-height: 28px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > ul
+  > li
+  > span:first-of-type {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > ul
+  > li
+  > span:nth-of-type(2) {
+  font-size: 12px;
+  color: #999;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > ul
+  > li
+  > input {
+  float: right;
+  width: 52px;
+  height: 20px;
+  padding-left: 28px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > section {
+  float: left;
+  font-size: 12px;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > section
+  > button {
+  width: 100px;
+  height: 32px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: white;
+}
+.first
+  > section
+  > ul
+  > li
+  > form
+  > section:nth-of-type(5)
+  > input
+  ~ section
+  > section
+  > a {
+  margin-left: 6px;
+  color: #007aff;
+}
+.first > section > ul > li > form > section:nth-of-type(5):hover > section {
+  display: block;
+}
+/*酒店级别*/
+.first > section > ul > li > form > section:nth-of-type(6) {
+  float: left;
+  font-size: 14px;
+  width: 240px;
+  height: 40px;
+}
+.first > section > ul > li > form > section:nth-of-type(6) > select {
+  width: 170px;
+  height: 28px;
+  border: 1px inset #ccc;
+}
+/*关键词*/
+.first > section > ul > li > form > section:last-of-type {
+  float: left;
+  font-size: 14px;
+  height: 40px;
+}
+.first > section > ul > li > form > section:last-of-type > span {
+  padding: 0 10px;
+}
+.first > section > ul > li > form > section:last-of-type > input {
+  width: 164px;
+  height: 24px;
+  padding-left: 4px;
+  border: 1px inset #ccc;
+}
+/*搜索按钮*/
+.first > section > ul > li > form > section ~ button {
+  position: absolute;
+  top: 220px;
+  left: 330px;
+  width: 145px;
+  height: 36px;
+  border: 1px outset orange;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+}

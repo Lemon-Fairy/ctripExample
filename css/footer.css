@@ -1,0 +1,310 @@
+@charset "utf-8";
+/*页脚*/
+footer {
+  background-color: white;
+  padding-bottom: 30px;
+}
+.footerBox {
+  width: 1180px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 12px;
+}
+.footerBox > dl {
+  float: left;
+}
+.footerBox > dl + dl {
+  border-left: 1px solid #ccc;
+}
+.footerBox > dl > dd > a {
+  line-height: 24px;
+  color: #666666;
+}
+/*为什么选择携程*/
+.footerBox > .footerBox_1 {
+  width: 250px;
+  height: 200px;
+}
+.footerBox_1 > dt {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footerBox_1 > dd > section {
+  width: 250px;
+  height: 50px;
+}
+.footerBox_1 > dd > .price {
+  margin-top: 10px;
+}
+/*图标形状和颜色*/
+.footerBox_1 > dd > section > div {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.footerBox_1 > dd > section > div > span {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.footerBox_1 > dd > .save > div > span {
+  background-color: #74a8ed;
+}
+.footerBox_1 > dd > .price > div > span {
+  background-color: orange;
+}
+/*服务与价格图标*/
+.icon-fuwu1 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 40px;
+  color: white;
+}
+.icon-jiage {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  font-size: 36px;
+  color: white;
+}
+.footerBox_1 > dd > section > section {
+  float: left;
+  margin-left: 8px;
+  line-height: 25px;
+}
+.footerBox_1 > dd > .save > section > p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007aff;
+}
+.footerBox_1 > dd > .price > section > p {
+  font-size: 18px;
+  font-weight: bold;
+  color: orange;
+}
+.footerBox_1 > dd > section > section > a {
+  color: #666666;
+}
+/*旅游资讯*/
+.footerBox > .footerBox_2 {
+  width: 231px;
+  height: 150px;
+  padding: 0 10px 0 20px;
+}
+.footerBox_2 > dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footerBox_2 > dd {
+  float: left;
+  width: 115px;
+}
+.footerBox_2 > dd:hover a {
+  color: #74a8ed;
+}
+/*加盟合作*/
+.footerBox > .footerBox_3 {
+  width: 231px;
+  height: 150px;
+  padding: 0 10px 0 20px;
+}
+.footerBox_3 > dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footerBox_3 > dd {
+  float: left;
+  width: 115px;
+}
+.footerBox_3 > dd:hover a {
+  color: #74a8ed;
+}
+/*关于携程*/
+.footerBox > .footerBox_4 {
+  width: 231px;
+  height: 150px;
+  padding: 0 0 0 20px;
+}
+.footerBox_4 > dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footerBox_4 > dd {
+  float: left;
+  width: 114px;
+}
+.footerBox_4 > dd:hover a {
+  color: #74a8ed;
+}
+/*第二个dd*/
+.footerBox_4 > dd:nth-of-type(2) {
+  position: relative;
+  z-index: 1;
+}
+.footerBox_4 > dd:nth-of-type(2) > a {
+  margin-left: -4px;
+  padding: 4px 4px 0 4px;
+  border: 1px solid transparent;
+}
+.footerBox_4 > dd:nth-of-type(2) ul > li:last-child > a {
+  color: #007aff;
+}
+/*旋转三角*/
+.footerBox_4 > dd > a > .icon-choose {
+  color: #007aff;
+}
+/*a隐藏部分*/
+.footerBox_4 > dd:nth-of-type(2) ul {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -116px;
+  width: 160px;
+  height: 80px;
+  padding: 10px 10px 10px 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.footerBox_4 > dd:nth-of-type(2) ul > li {
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.footerBox_4 > dd:nth-of-type(2) ul > li > a {
+  color: black;
+}
+.footerBox_4 > dd:nth-of-type(2) ul > li:hover > a {
+  color: #007aff;
+  text-decoration: underline;
+}
+/*显示隐藏部分*/
+.footerBox_4 > dd:nth-of-type(2):hover ul {
+  display: block;
+}
+.footerBox_4 > dd:nth-of-type(2):hover > a {
+  border: 1px solid;
+  border-color: #ccc #ccc white #ccc;
+  z-index: 2;
+}
+.footerBox_4 > dd:nth-of-type(2):hover a > i.icon-choose {
+  transform: rotate(180deg);
+}
+/*二维码*/
+.footerBox > .footerBox_5 {
+  width: 133px;
+  height: 150px;
+  padding-left: 20px;
+}
+.footerBox_5 > dt {
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footerBox_5 > dd {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.footerBox_5 > dd > p {
+  line-height: 24px;
+  color: #999;
+}
+/*最底部*/
+.hot-lineTelephone {
+  width: 1180px;
+  height: 124px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+}
+.hot-lineTelephone > p {
+  line-height: 26px;
+  color: #999999;
+}
+.hot-lineTelephone > p > a {
+  color: #999;
+}
+.hot-lineTelephone > p > a:hover {
+  color: #007aff;
+}
+/*有色图片公共样式*/
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/*底部图片*/
+.hot-lineTelephone > .bottom_img {
+  height: 34px;
+  margin-top: 12px;
+}
+.hot-lineTelephone > .bottom_img > a {
+  display: inline-block;
+  width: 88px;
+  height: 32px;
+  margin: 0 2px;
+  border: 1px solid #999;
+  color: #999999;
+  vertical-align: middle;
+  line-height: 32px;
+  text-indent: -9999px;
+  background: url("../images/bottom_phone_list.png") no-repeat white;
+  border-radius: 2px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(1) {
+  text-indent: 36px;
+  background-position: -88px -50px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(2) {
+  text-indent: 36px;
+  background-position: -88px -85px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(3) {
+  background-position: 0 -50px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(4) {
+  background-position: -88px -118px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(4) > p {
+  float: right;
+  width: 52px;
+  height: 32px;
+  line-height: 16px;
+  text-align: left;
+  text-indent: 0;
+  word-wrap: break-word;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(5) {
+  width: 95px;
+  background-position: 4px -386px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(6) {
+  background-position: 0 -118px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(7) {
+  width: 95px;
+  background-position: 0 -193px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(8) {
+  width: 102px;
+  background-position: 0 -430px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(9) {
+  width: 114px;
+  background-position: 0 -155px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(10) {
+  width: 50px;
+  background-position: 0 -480px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(11) {
+  width: 130px;
+  background-position: 0 -350px;
+}

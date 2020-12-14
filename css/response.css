@@ -1,0 +1,328 @@
+@charset "utf-8";
+/*顶部导航栏*/
+.top {
+  width: 980px;
+}
+/*logo*/
+.box {
+  width: 980px;
+}
+.leftBox > input {
+  left: 156px;
+  width: 285px;
+}
+/*第三行首页*/
+.goods > .checkTip {
+  width: 980px;
+  white-space: nowrap;
+}
+.goods > .checkTip > li {
+  padding: 0 6px;
+}
+.goods > .checkTip > li > a {
+  padding: 0 0.5px;
+}
+.goods > .checkTip > li.curise {
+  display: none;
+}
+.public > nav {
+  width: 978px;
+}
+.hotel > nav {
+  left: -43px;
+}
+.ly > nav {
+  left: -105px;
+}
+.airTicket > nav {
+  left: -283px;
+}
+.train > nav {
+  left: -345px;
+}
+.ship > nav {
+  left: -407px;
+}
+.car > nav {
+  left: -496px;
+}
+.ticket > nav {
+  left: -558px;
+}
+.buying > nav {
+  right: -240px;
+}
+.giftCard > nav {
+  right: -163px;
+}
+.gDuo > nav {
+  right: 0;
+}
+/*第四行导航栏*/
+.trip > .tripCheck {
+  width: 980px;
+}
+.trip > .tripCheck > li:nth-of-type(10) {
+  display: none;
+}
+.trip > .tripCheck > li:nth-of-type(11) {
+  display: none;
+}
+.trip > .tripCheck > li:nth-of-type(12) {
+  display: none;
+}
+/*表单*/
+.menu {
+  width: 980px;
+}
+/*内容区*/
+/*1*/
+.container > .newsOne {
+  width: 980px;
+}
+.newsOne > .hot {
+  width: 950px;
+}
+.hot_right {
+  display: none;
+}
+/*2*/
+.container > .newsTwo {
+  width: 980px;
+}
+.newsTwo > .overseasHotel {
+  width: 978px;
+}
+.newsTwo > .overseasHotel > .left_list {
+  padding-right: 48px;
+}
+.newsTwo > .overseasHotel > .right_list {
+  width: 684px;
+  padding: 10px 20px 0;
+}
+.list_msg_right {
+  display: none;
+}
+/*3*/
+.container > .newsThree {
+  width: 980px;
+}
+.newsThree > .newsNav_3 {
+  width: 980px;
+}
+.air_ticket > .air_ticket_title {
+  width: 946px;
+}
+.newsThree > .air_ticket {
+  width: 946px;
+}
+.air_ticket_content > .air_ticket_content_item > ul {
+  width: 962px;
+}
+.air_ticket_content > .air_ticket_content_item > ul > li {
+  margin-right: 20px;
+}
+.air_ticket_content > .air_ticket_content_img {
+  display: none;
+}
+/*4*/
+.container > .newsFour {
+  width: 980px;
+}
+.container > .newsFour > .newsNav_4 {
+  width: 980px;
+}
+.newsFour > .car {
+  width: 978px;
+}
+.car > .right_news {
+  width: 720px;
+}
+.car_img > ul > li {
+  margin-right: 20px;
+}
+.car_img > ul > li:last-child {
+  display: none;
+}
+/*5*/
+.container > .newsFive {
+  width: 980px;
+}
+.newsFive > .newsNav_5 {
+  width: 980px;
+}
+.newsFive > .play {
+  width: 978px;
+}
+/*6*/
+.container > .newsSix {
+  width: 980px;
+}
+.newsSix > .newsNav_6 {
+  width: 980px;
+}
+.newsSix > .buy {
+  width: 978px;
+}
+/*7*/
+.container > .newsSeven {
+  width: 980px;
+}
+.newsSeven > .newsNav_7 {
+  width: 980px;
+}
+.newsSeven > .worldTrip {
+  width: 978px;
+}
+/*8*/
+.container > .newsEight {
+  width: 980px;
+}
+.newsEight > .newsNav_8 {
+  width: 980px;
+}
+.tripServer > div {
+  width: 318px;
+}
+.tripServer > div > .WiFi:first-child > section:first-child {
+  width: 90px;
+}
+.tripServer > div > section:first-child > section:first-child {
+  width: 90px;
+}
+.tripServer > div > .WiFi:first-child > section:last-child {
+  width: 216px;
+  padding: 12px 0 0 8px;
+}
+.tripServer > div > section:first-child > section:last-child {
+  width: 216px;
+  padding: 12px 0 0 8px;
+}
+.tripServer > div > section:nth-child(2) > ul {
+  width: 318px;
+}
+.tripServer > div > section:nth-child(2) > ul > li {
+  width: 106px;
+}
+.tripServer > .tripServer_last > section:nth-child(2) > ul {
+  width: 318px;
+}
+.tripServer > .tripServer_last > section:nth-child(2) > ul > li {
+  width: 159px;
+}
+.tripServer > .tripServer_last > section:nth-child(2) > ul > li > a {
+  padding-left: 40px;
+  background-position: 30px 2px;
+}
+.tripServer > div > section:nth-child(2) > ul > li:last-child {
+  display: none;
+}
+/*9*/
+.container > .newsNine {
+  width: 980px;
+}
+.newsNine > .newsNav_9 {
+  width: 980px;
+}
+.tripBusiness > div {
+  width: 318px;
+}
+.tripBusiness > div > section:first-child {
+  width: 90px;
+}
+.tripBusiness > .tripBusiness_last > .data {
+  width: 90px;
+}
+.tripBusiness > div > section:nth-child(2) {
+  width: 216px;
+  padding: 12px 0 0 12px;
+}
+.tripBusiness > div > section:nth-child(2) > p:nth-child(2) {
+  width: 210px;
+}
+/*10*/
+.container > .newsTen {
+  width: 980px;
+  height: 376px;
+}
+.newsTen > .up > .up_right {
+  width: 724px;
+}
+.newsTen > .up > .up_right > ul > li {
+  width: 120px;
+}
+.newsTen > .down {
+  height: 254px;
+}
+.newsTen > .down > dl > dd {
+  width: 92px;
+  white-space: nowrap;
+}
+.newsTen > .down > dl + dl > dd:nth-of-type(10) {
+  display: none;
+}
+.newsTen > .down > dl + dl > dd:nth-of-type(11) {
+  display: none;
+}
+.newsTen > .down > dl + dl > dd:nth-of-type(12) {
+  display: none;
+}
+.newsTen > .down > dl.down_first > dt {
+  height: 93px;
+}
+.newsTen > .down > dl.down_first {
+  height: 93px;
+}
+/*侧边栏*/
+.container > aside {
+  display: none;
+}
+/*页脚区域*/
+.footerBox {
+  width: 980px;
+}
+.footerBox > .footerBox_2 {
+  width: 155px;
+  padding: 0 10px;
+}
+.footerBox_2 > dd {
+  width: 77px;
+}
+.footerBox > .footerBox_3 {
+  width: 192px;
+  padding: 0 10px;
+}
+.footerBox_3 > dd {
+  width: 96px;
+}
+.footerBox > .footerBox_4 {
+  padding-left: 10px;
+  width: 160px;
+}
+.footerBox_4 > dd {
+  width: 80px;
+}
+.footerBox > .footerBox_5 {
+  padding-left: 15px;
+}
+.hot-lineTelephone {
+  width: 980px;
+  height: 168px;
+}
+.hot-lineTelephone > .bottom_img {
+  margin: 10px auto;
+  width: 696px;
+  height: 78px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(8) {
+  margin-top: 10px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(9) {
+  margin-top: 10px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(10) {
+  margin-top: 10px;
+}
+.hot-lineTelephone > .bottom_img > a:nth-child(11) {
+  display: none;
+}

@@ -1,0 +1,1561 @@
+@charset "utf-8";
+body,
+p,
+h3,
+ul,
+li,
+dl,
+dd,
+dt,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #f6f6f6;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.sign3::after {
+  content: "H";
+  position: absolute;
+  top: -8px;
+  right: 4px;
+  width: 10px;
+  height: 10px;
+  font-size: 9px;
+  line-height: 10px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+}
+/*内容区*/
+.container {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.container > .newsOne {
+  width: 1180px;
+  height: 430px;
+  margin: 0 auto 20px;
+}
+.newsOne > .newsNav_1 {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid #007aff;
+}
+.newsOne > .newsNav_1 > span {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+/*小标题*/
+.sign {
+  position: relative;
+}
+.sign1::before {
+  content: "HOT";
+}
+.sign2::before {
+  content: "NEW";
+}
+.sign::before {
+  position: absolute;
+  top: -10px;
+  right: -7px;
+  height: 15px;
+  line-height: 15px;
+  padding: 0 2px;
+  font-size: 12px;
+  background-color: orange;
+  color: white;
+}
+.sign1::after {
+  content: "";
+}
+.sign2::after {
+  content: "";
+}
+.sign::after {
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  border: 5px solid transparent;
+  border-right-color: orange;
+  transform: rotate(45deg);
+}
+.newsOne > .newsNav_1 > span:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+/*西安出发*/
+.newsOne > .newsNav_1 > a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 13px;
+  color: #007aff;
+}
+/*热门部分*/
+.newsOne > .hot {
+  width: 1150px;
+  height: 360px;
+  padding: 10px 14px 14px;
+  background-color: white;
+  border: 1px solid;
+  border-color: transparent #ccc #ccc #ccc;
+}
+/*标题小字部分*/
+.hot > .hot_title {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.hot > .hot_title > ul > li {
+  float: left;
+  padding: 1px 4px 0 4px;
+  margin-right: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+}
+.hot > .hot_title > ul > li > a {
+  color: #007aff;
+}
+.hot > .hot_title > ul > li:first-child {
+  background-color: #007aff;
+}
+.hot > .hot_title > ul > li:first-child a {
+  color: white;
+}
+.hot > .hot_title > ul > li:hover {
+  background-color: #007aff;
+}
+.hot > .hot_title > ul > li:hover a {
+  color: white;
+}
+/*图片部分*/
+.hot_left {
+  width: 928px;
+  height: 100%;
+}
+.hot_left > ul > li {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 160px;
+  overflow: hidden;
+  margin: 0 12px 12px 0;
+}
+.hot_left > ul > li:hover > a > .img_list > span {
+  display: none;
+}
+.hot_left > ul > li:hover .inside {
+  display: none;
+}
+.hot_left > ul > li:hover .disappear {
+  display: block;
+}
+.hot_left > ul > li:first-child {
+  background: url("../images/sanya.jpg") no-repeat center/cover;
+}
+.hot_left > ul > li:nth-child(2) {
+  background: url("../images/beijing.jpg") no-repeat center/cover;
+}
+.hot_left > ul > li:nth-child(3) {
+  background: url("../images/chongqing.jpg") no-repeat center/cover;
+}
+.hot_left > ul > li:nth-child(4) {
+  background: url("../images/xiamen.jpg") no-repeat center/cover;
+}
+.hot_left > ul > li:nth-child(5) {
+  background: url("../images/guangzhou.jpg") no-repeat center/cover;
+}
+.hot_left > ul > li:nth-child(6) {
+  background: url("../images/lijiang.jpg") no-repeat center/cover;
+}
+.hot_left > ul > li:nth-child(7) {
+  background: url("../images/kunming.jpg") no-repeat center/cover;
+}
+.hot_left > ul > li:nth-child(8) {
+  background: url("../images/chengdu.jpg") no-repeat center/cover;
+}
+.img_list > span {
+  position: absolute;
+  width: 78px;
+  height: 20px;
+  padding: 0 4px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  border-bottom-right-radius: 8px;
+  background-color: darkorange;
+}
+.hot_left > ul > li > a > .inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 112px;
+  height: 112px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.inside > .font {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 56px;
+  margin: auto;
+  z-index: 2;
+}
+.inside > .font > p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 3px;
+  color: white;
+  text-align: center;
+}
+.inside > .font > p + p {
+  /*font-size: 12px;*/
+  color: white;
+  border-top: 1px solid #ccc;
+}
+.inside > .font > p > b {
+  font-size: 22px;
+  color: orange;
+}
+/*弹出框样式*/
+.disappear {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+}
+.disappear > h3 {
+  font-size: 20px;
+  line-height: 40px;
+}
+.disappear > p {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap; /*保证文字不换行*/
+  text-overflow: ellipsis; /*ellipsis省略号*/
+}
+.disappear > p:last-child {
+  margin-top: 10px;
+}
+/*12.11旅游会员日图片定位*/
+.hot_right {
+  position: relative;
+}
+.hot_right > a > img {
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+}
+/*海外酒店部分*/
+.container > .newsTwo {
+  width: 1180px;
+  height: 441px;
+  margin: 0 auto 20px;
+}
+.container > .newsTwo > .newsNav_2 {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid #007aff;
+}
+.container > .newsTwo > .newsNav_2 > span {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+.container > .newsTwo > .newsNav_2 > span:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+.newsTwo > .overseasHotel {
+  width: 1178px;
+  height: 390px;
+  background-color: white;
+  border: 1px solid;
+  border-color: transparent #ccc #ccc #ccc;
+}
+.newsTwo > .overseasHotel > .left_list {
+  float: left;
+  width: 185px;
+  height: 100%;
+  padding: 0 20px;
+  border-right: 1px dotted #ccc;
+}
+.left_list > .list_title > dd {
+  height: 32px;
+  line-height: 32px;
+  padding-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.left_list > .list_title span > a {
+  display: inline-block;
+  height: 32px;
+  /*font-size: 12px;*/
+  line-height: 32px;
+  color: #666;
+}
+.left_list > .list_title span > a:hover {
+  color: #007aff;
+}
+.newsTwo > .overseasHotel > .right_list {
+  float: left;
+  width: 922px;
+  height: 375px;
+  padding: 15px 14px 0;
+}
+.right_list > .list_top > ul > li {
+  float: left;
+  height: 18px;
+  padding: 0 6px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.right_list > .list_top > ul > li > a {
+  line-height: 20px;
+  color: #007aff;
+}
+.right_list > .list_top > ul > li:first-child {
+  background-color: #007aff;
+}
+.right_list > .list_top > ul > li:first-child > a {
+  color: white;
+}
+.right_list > .list_top > ul > li:hover {
+  background-color: #007aff;
+}
+.right_list > .list_top > ul > li:hover > a {
+  color: white;
+}
+.right_list > .list_top > ul > li.list_last {
+  float: right;
+  margin-right: 0;
+  border: 1px solid transparent;
+  background-color: white;
+}
+.right_list > .list_top > ul > li.list_last > a {
+  color: #007aff;
+}
+.right_list > .list_top > ul > li.list_last:hover {
+  border: 1px solid #007aff;
+}
+/*图片缩放*/
+.right_list > .list_msg {
+  height: 345px;
+  margin-top: 10px;
+}
+.list_msg_left {
+  float: left;
+  width: 702px;
+  height: 100%;
+}
+.list_msg_left > ul > li {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 160px;
+  overflow: hidden;
+  margin: 0 12px 12px 0;
+}
+.list_msg_left > ul > li > a {
+  display: block;
+  width: 220px;
+  height: 160px;
+}
+.list_msg_left > ul > li > a > img {
+  width: 220px;
+  height: 220px;
+}
+.list_msg_left > ul > li:hover img {
+  transition: 0.5s ease;
+  transform: scale(1.1);
+}
+.list_msg_left > ul > li:hover .in_item {
+  transition: 1.2s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.list_msg_left > ul > li > a > .in_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 112px;
+  height: 112px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.in_item > .img_font {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 56px;
+  margin: auto;
+  z-index: 2;
+}
+.in_item > .img_font > p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 3px;
+  color: white;
+  text-align: center;
+}
+.in_item > .img_font > p + p {
+  color: white;
+  text-align: center;
+}
+.in_item > .img_font > p:last-child {
+  border-top: 1px solid #ccc;
+}
+.in_item > .img_font > p > b {
+  font-size: 22px;
+  color: orange;
+}
+/*泰国酒店图片*/
+.list_msg_right {
+  position: relative;
+}
+.list_msg_right > a > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.list_msg_right > a > img ~ p {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  width: 220px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.list_msg_right > a > img ~ p + p {
+  display: none;
+  position: absolute;
+  top: 330px;
+  right: -50px;
+  width: 150px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.list_msg_right > a > img:hover ~ p {
+  display: block;
+}
+/*飞机票部分*/
+.container > .newsThree {
+  width: 1180px;
+  height: 437px;
+  margin: 0 auto 20px;
+}
+.newsThree > .newsNav_3 {
+  position: relative;
+  width: 1180px;
+  height: 38px;
+  border-bottom: 2px solid #007aff;
+}
+.newsThree > .newsNav_3 > span {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+.newsThree > .newsNav_3 > span:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+.newsThree > .newsNav_3 > a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 13px;
+  color: #007aff;
+}
+.newsThree > .air_ticket {
+  width: 1146px;
+  height: 380px;
+  border: 1px solid;
+  padding: 15px 16px 0;
+  border-color: transparent #ccc #ccc #ccc;
+  background-color: white;
+}
+.air_ticket > .air_ticket_title {
+  width: 1150px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.air_ticket > .air_ticket_title > ul > li {
+  float: left;
+  height: 20px;
+  padding: 0 4px 0 4px;
+  margin-right: 20px;
+  border-radius: 3px;
+  line-height: 20px;
+}
+.air_ticket_title > ul > li > a {
+  font-size: 12px;
+  color: #007aff;
+}
+.air_ticket_title > ul > li:first-child {
+  background-color: #007aff;
+}
+.air_ticket_title > ul > li:first-child > a {
+  color: white;
+}
+.air_ticket_title > ul > li:hover {
+  background-color: #007aff;
+}
+.air_ticket_title > ul > li:hover > a {
+  color: white;
+}
+.air_ticket_title > ul > li.air_ticket_title_last {
+  float: right;
+  margin-right: 0;
+  border: 1px solid transparent;
+  background-color: white;
+}
+.air_ticket_title > ul > li.air_ticket_title_last > a {
+  color: #007aff;
+}
+.air_ticket_title > ul > li.air_ticket_title_last:hover {
+  border: 1px solid #007aff;
+}
+/*往返车票card*/
+.air_ticket > .air_ticket_content > .air_ticket_content_item {
+  width: 920px;
+  height: 350px;
+}
+.air_ticket_content > .air_ticket_content_item > ul {
+  width: 920px;
+  height: 350px;
+  font-size: 12px;
+}
+.air_ticket_content > .air_ticket_content_item > ul > li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 86px;
+  margin: 0 8px 8px 0;
+  padding: 10px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+.air_ticket_content > .air_ticket_content_item > ul > li:hover {
+  box-shadow: 0 1px 2px 1px #ccc;
+}
+.air_ticket_content > .air_ticket_content_item > ul > li:hover button {
+  cursor: pointer;
+}
+/*立抢机票*/
+.air_ticket_content_item > ul > li > p {
+  width: 176px;
+  height: 28px;
+  padding: 0 4px;
+}
+.icon-dengjiahuan {
+  padding: 0 8px;
+  color: #ccc;
+}
+.air_ticket_content_item > ul > li > p:first-child {
+  line-height: 28px;
+}
+.air_ticket_content_item > ul > li > p:nth-child(2) {
+  color: #999;
+}
+.air_ticket_content_item > ul > li > p:nth-child(3) {
+  color: #666;
+}
+.air_ticket_content_item > ul > li > p:nth-child(3) > b {
+  color: orange;
+  font-size: 20px;
+}
+.air_ticket_content_item > ul > li > button {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  width: 60px;
+  height: 26px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: orange;
+}
+/*右侧国航图片*/
+.air_ticket > .air_ticket_content {
+  position: relative;
+}
+.air_ticket_content > .air_ticket_content_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*境内外出租车*/
+.container > .newsFour {
+  width: 1180px;
+  height: 304px;
+  margin: 0 auto 20px;
+}
+.container > .newsFour > .newsNav_4 {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid #007aff;
+}
+.container > .newsFour > .newsNav_4 > span {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+.container > .newsFour > .newsNav_4 > span:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+.newsFour > .car {
+  width: 1178px;
+  height: 260px;
+  border: 1px solid;
+  border-color: transparent #ccc #ccc #ccc;
+  background-color: white;
+}
+.car > .left_news {
+  float: left;
+  width: 187px;
+  height: 245px;
+  padding: 0 20px 15px;
+  border-right: 1px dotted #ccc;
+}
+.left_news > dl > dt {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.left_news > dl > dd > span {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0 9px;
+  margin: 8px 0;
+  border-right: 1px solid #ccc;
+}
+.left_news > dl > dd > span > a {
+  color: #666;
+}
+.left_news > dl > dd > span > a:hover {
+  color: #007aff;
+}
+.car > .right_news {
+  float: left;
+  width: 920px;
+  height: 230px;
+  padding: 15px;
+}
+.right_news > .car_title {
+  height: 18px;
+  margin-bottom: 10px;
+}
+.car_title > ul > li {
+  float: left;
+  padding: 0 6px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.car_title > ul > li:hover {
+  background-color: #007aff;
+}
+.car_title > ul > li:hover > a {
+  color: white;
+}
+.car_title > ul > li > a {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  color: #007aff;
+}
+.car_title > ul > li:first-child {
+  background-color: #007aff;
+}
+.car_title > ul > li:first-child > a {
+  color: white;
+}
+.car_title > ul > li.checks {
+  background-color: white;
+}
+.car_title > ul > li.checks > a {
+  color: #007aff;
+}
+:hover li.checks {
+  background-color: white;
+  color: #007aff;
+}
+.car_title > ul > .car_title_last {
+  float: right;
+  margin-right: 0;
+  border: 1px solid transparent;
+}
+.car_title > ul > .car_title_last > a {
+  color: #007aff;
+}
+.car_title > ul > .car_title_last:hover {
+  border: 1px solid #007aff;
+  background-color: white;
+}
+.car_title > ul > .car_title_last:hover > a {
+  color: #007aff;
+}
+/*车模图片*/
+.right_news > .car_img {
+  height: 202px;
+}
+.car_img > ul > li {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 100%;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+}
+.car_img > ul > li:hover {
+  box-shadow: 0 1px 2px 1px #ccc;
+}
+.car_img > ul > li > a:hover img {
+  transition: 0.8s ease 0s;
+  transform: scale(1.05);
+}
+.car_img > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 202px;
+}
+.car_img > ul > li > a > img {
+  width: 220px;
+  height: 146px;
+}
+.car_img > ul > li > a > img + p {
+  width: 212px;
+  padding: 0 4px;
+  color: #666;
+}
+.car_img > ul > li > a > span {
+  display: block;
+  width: 140px;
+  height: 35px;
+  margin-left: 4px;
+  line-height: 35px;
+  color: #999;
+}
+.car_img > ul > li > a > p:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  float: right;
+  color: orange;
+  font-size: 20px;
+}
+.car_img > ul > li > a > p:last-child > sup,
+.car_img > ul > li > a > p:last-child > span {
+  font-size: 12px;
+  color: #666;
+}
+/*当地玩乐*/
+.container > .newsFive {
+  width: 1180px;
+  height: 262px;
+  margin: 0 auto 20px;
+}
+.newsFive > .newsNav_5 {
+  position: relative;
+  width: 1180px;
+  height: 38px;
+  border-bottom: 2px solid #007aff;
+}
+.newsFive > .newsNav_5 > span {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+.newsFive > .newsNav_5 > span:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+.newsFive > .play {
+  width: 1178px;
+  height: 220px;
+  border: 1px solid;
+  border-color: transparent #ccc #ccc #ccc;
+  background-color: white;
+}
+.play > .left_msg {
+  float: left;
+  width: 187px;
+  height: 205px;
+  padding: 0 20px 15px;
+  border-right: 1px dotted #ccc;
+}
+.left_msg > dl > dt {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.left_msg > dl > dd > span {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0 9px;
+  margin: 8px 0;
+  border-right: 1px solid #ccc;
+}
+.left_msg > dl > dd > span > a {
+  color: #666;
+}
+.left_msg > dl > dd > span > a:hover {
+  color: #007aff;
+}
+
+/*全球购*/
+.container > .newsSix {
+  width: 1180px;
+  height: 262px;
+  margin: 0 auto 20px;
+}
+.newsSix > .newsNav_6 {
+  position: relative;
+  width: 1180px;
+  height: 38px;
+  border-bottom: 2px solid #007aff;
+}
+.newsSix > .newsNav_6 > span {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+.newsSix > .newsNav_6 > span:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+.newsSix > .buy {
+  width: 1178px;
+  height: 220px;
+  border: 1px solid;
+  border-color: transparent #ccc #ccc #ccc;
+  background-color: white;
+}
+.buy > .left_item {
+  float: left;
+  width: 187px;
+  height: 205px;
+  padding: 0 20px 15px;
+  border-right: 1px dotted #ccc;
+}
+.left_item > dl > dt {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.left_item > dl > dd > span {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0 9px;
+  margin: 8px 0;
+  border-right: 1px solid #ccc;
+}
+.left_item > dl > dd > span > a {
+  color: #666;
+}
+.left_item > dl > dd > span > a:hover {
+  color: #007aff;
+}
+
+/*目的地攻略*/
+.container > .newsSeven {
+  width: 1180px;
+  height: 262px;
+  margin: 0 auto 20px;
+}
+.newsSeven > .newsNav_7 {
+  position: relative;
+  width: 1180px;
+  height: 38px;
+  border-bottom: 2px solid #007aff;
+}
+.container > .newsSeven > .newsNav_7 > span {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+.newsSeven > .newsNav_7 > span:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+.newsSeven > .worldTrip {
+  width: 1178px;
+  height: 220px;
+  border: 1px solid;
+  border-color: transparent #ccc #ccc #ccc;
+  background-color: white;
+}
+.worldTrip > .left_program {
+  float: left;
+  width: 187px;
+  height: 205px;
+  padding: 0 20px 15px;
+  border-right: 1px dotted #ccc;
+}
+.left_program > .list_program > dd {
+  height: 32px;
+  line-height: 32px;
+  padding-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.left_program > .list_program span > a {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  color: #666;
+}
+.left_program > .list_program span > a:hover {
+  color: #007aff;
+}
+
+/*旅游服务和企业商旅的公共小三角*/
+.sanJiao::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 25px;
+  border: 8px solid;
+  border-color: transparent transparent #007aff transparent;
+}
+.sanJiao {
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  margin-right: 26px;
+  font-size: 16px;
+}
+.sanJiao:hover {
+  color: #007aff;
+  cursor: pointer;
+}
+/*旅行服务*/
+.container > .newsEight {
+  width: 1180px;
+  height: 193px;
+  margin: 0 auto 20px;
+}
+.newsEight > .newsNav_8 {
+  position: relative;
+  width: 1180px;
+  height: 38px;
+  border-bottom: 2px solid #007aff;
+}
+.newsEight > .tripServer {
+  width: 100%;
+  height: 143px;
+  margin-top: 10px;
+}
+.tripServer > div {
+  float: left;
+  width: 384px;
+  height: 141px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.tripServer > .tripServer_last {
+  margin-right: 0;
+}
+/*WiFi*/
+.tripServer > div > .WiFi:first-child {
+  width: 100%;
+  height: 102px;
+}
+.tripServer > div > .WiFi:hover {
+  cursor: pointer;
+  background-color: #e2edff;
+}
+.tripServer > div > .WiFi:first-child > section:first-child {
+  float: left;
+  width: 130px;
+  height: 102px;
+}
+.tripServer > div > .WiFi:first-child > section:first-child > span {
+  position: relative;
+  display: block;
+  float: right;
+  width: 80px;
+  height: 80px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background-color: #abcbf5;
+}
+.tripServer
+  > div
+  > .WiFi:first-child
+  > section:first-child
+  > span
+  > .icon-wifiwofi {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  padding-right: 0;
+  font-size: 60px;
+  color: white;
+}
+.tripServer > div > .WiFi:first-child > section:last-child {
+  float: left;
+  width: 240px;
+  height: 90px;
+  padding: 12px 6px 0 8px;
+}
+.tripServer > div > .WiFi:first-child > section:last-child > p:first-child {
+  font-weight: normal;
+  font-size: 18px;
+  padding-bottom: 6px;
+  color: black;
+}
+.tripServer > div > .WiFi:first-child > section:last-child > p + p {
+  line-height: 20px;
+  color: #666;
+}
+.tripServer > div > section:nth-child(2) > ul > li {
+  float: left;
+  width: 96px;
+  height: 28px;
+  padding: 5px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  line-height: 28px;
+}
+.tripServer > div > section:nth-child(2) > ul > li + li > a {
+  border-left: 1px dashed #ccc;
+}
+.tripServer > div > section:nth-child(2) > ul > li > a {
+  display: block;
+  width: 96px;
+  height: 28px;
+  color: black;
+}
+.tripServer > div > section:nth-child(2) > ul > li:hover {
+  background-color: #e2edff;
+}
+.icon-location {
+  font-size: 24px;
+  color: #ccc;
+}
+/*password签证*/
+.tripServer > div + div > .password:first-child {
+  width: 100%;
+  height: 102px;
+}
+.tripServer > div + div > .password:hover {
+  cursor: pointer;
+  background-color: #e2edff;
+}
+.password:first-child > section:first-child {
+  float: left;
+  width: 130px;
+  height: 102px;
+}
+.password:first-child > section:first-child > span {
+  position: relative;
+  display: block;
+  float: right;
+  width: 80px;
+  height: 80px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background-color: #cbe2b3;
+}
+.password:first-child > section:first-child > span > .icon-qianzhenggonglve {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  padding-right: 0;
+  font-size: 60px;
+  color: white;
+}
+.password:first-child > section:last-child {
+  float: left;
+  width: 240px;
+  height: 90px;
+  padding: 12px 6px 0 8px;
+}
+.password:first-child > section:last-child > p:first-child {
+  font-weight: normal;
+  font-size: 18px;
+  padding-bottom: 6px;
+  color: black;
+}
+.password:first-child > section:last-child > p + p {
+  line-height: 20px;
+  color: #666;
+}
+.password:first-child > section:first-child > span > .icon-qianzhenggonglve {
+  font-size: 60px;
+  color: white;
+}
+/*ul,li样式*/
+.tripServer > div > section:nth-child(2) > ul > li {
+  float: left;
+  width: 96px;
+  height: 28px;
+  padding: 5px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  line-height: 28px;
+}
+.tripServer > div > section:nth-child(2) > ul > li + li > a {
+  border-left: 1px dashed #ccc;
+}
+.tripServer > div > section:nth-child(2) > ul > li > a {
+  display: block;
+  width: 96px;
+  height: 28px;
+  color: black;
+}
+.tripServer > div + div > section:nth-child(2) > ul > li:hover {
+  background-color: #e2edff;
+}
+/*保险*/
+.tripServer > .tripServer_last > .baoXian:first-child {
+  width: 100%;
+  height: 102px;
+}
+.tripServer_last > .baoXian:hover {
+  cursor: pointer;
+  background-color: #e2edff;
+}
+.baoXian:first-child > section:first-child {
+  float: left;
+  width: 130px;
+  height: 102px;
+}
+.baoXian:first-child > section:first-child > span {
+  position: relative;
+  display: block;
+  float: right;
+  width: 80px;
+  height: 80px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background-color: #f6dbb9;
+}
+.baoXian:first-child > section:first-child > span > .icon-baoxian {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  padding-right: 0;
+  font-size: 60px;
+  color: white;
+}
+.baoXian:first-child > section:last-child {
+  float: left;
+  width: 240px;
+  height: 90px;
+  padding: 12px 6px 0 8px;
+}
+.baoXian:first-child > section:last-child > p:first-child {
+  font-weight: normal;
+  font-size: 18px;
+  padding-bottom: 6px;
+  color: black;
+}
+.baoXian:first-child > section:last-child > p + p {
+  line-height: 20px;
+  color: #666;
+}
+.baoXian:first-child > section:first-child > span > .icon-baoxian {
+  font-size: 60px;
+  color: white;
+}
+.tripServer > .tripServer_last > section:nth-child(2) > ul > li {
+  float: left;
+  width: 128px;
+  height: 28px;
+  padding: 5px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  line-height: 28px;
+}
+.tripServer > .tripServer_last > section:nth-child(2) > ul > li + li > a {
+  border-left: 1px dashed #ccc;
+}
+.tripServer > .tripServer_last > section:nth-child(2) > ul > li > a {
+  display: block;
+  width: 108px;
+  height: 28px;
+  color: black;
+  padding-left: 20px;
+  background: url("../images/1.png") no-repeat 10px 2px;
+}
+.tripServer > .tripServer_last > section:nth-child(2) > ul > li:hover {
+  background-color: #e2edff;
+}
+/*企业商旅*/
+.container > .newsNine {
+  width: 1180px;
+  height: 154px;
+  margin: 0 auto 20px;
+}
+.newsNine > .newsNav_9 {
+  position: relative;
+  width: 1180px;
+  height: 38px;
+  border-bottom: 2px solid #007aff;
+}
+.newsNine > .tripBusiness {
+  width: 100%;
+  height: 104px;
+  margin-top: 10px;
+}
+.tripBusiness > div {
+  position: relative;
+  float: left;
+  width: 384px;
+  height: 102px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.tripBusiness > div:hover {
+  background-color: #e2edff;
+  cursor: pointer;
+}
+/*1*/
+.tripBusiness > div > .shoppingCart {
+  float: left;
+  width: 130px;
+  height: 100%;
+}
+.tripBusiness > div > .shoppingCart > span {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background-color: #ff6666;
+}
+.icon-gouwuche {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 48px;
+  color: white;
+}
+/*2*/
+.tripBusiness > div + div > .pay {
+  float: left;
+  width: 130px;
+  height: 100%;
+}
+.tripBusiness > div + div > .pay > span {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background-color: #fbe09f;
+}
+.icon-jiesuan {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 48px;
+  color: white;
+}
+/*3*/
+.tripBusiness > .tripBusiness_last > .data {
+  float: left;
+  width: 130px;
+  height: 100%;
+}
+.tripBusiness > .tripBusiness_last > .data > span {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background-color: #007aff;
+}
+.tripBusiness > div.tripBusiness_last {
+  margin-right: 0;
+}
+.icon-tongji {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  font-size: 48px;
+  color: white;
+}
+/*公共*/
+.tripBusiness > div > section:nth-child(2) {
+  float: left;
+  width: 238px;
+  height: 90px;
+  padding: 12px 4px 0 12px;
+}
+.tripBusiness > div > section:nth-child(2) > p:first-child {
+  padding-bottom: 6px;
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+}
+.tripBusiness > div > section:nth-child(2) > p:nth-child(2) {
+  color: #666;
+  line-height: 20px;
+}
+/*合作优惠，合作伙伴*/
+.container > .newsTen {
+  width: 1180px;
+  height: 342px;
+  margin: 0 auto 40px;
+  background-color: white;
+}
+.newsTen > .up {
+  height: 98px;
+  border: 1px solid #ccc;
+}
+/*左侧合作优惠*/
+.newsTen > .up > .up_left {
+  float: left;
+  width: 199px;
+  height: 78px;
+  border-right: 1px solid #ccc;
+  padding: 10px 4px 10px 15px;
+}
+.newsTen > .up > .up_left > section {
+  width: 199px;
+  height: 30px;
+  margin-bottom: 4px;
+}
+.newsTen > .up > .up_left > section {
+  font-size: 18px;
+  line-height: 30px;
+}
+.newsTen > .up > .up_left > section > a {
+  float: right;
+  font-size: 12px;
+  color: #ccc;
+}
+.newsTen > .up > .up_left > ul {
+  width: 199px;
+  height: 49px;
+}
+.newsTen > .up > .up_left > ul > li {
+  width: 199px;
+  height: 20px;
+  line-height: 22px;
+}
+.newsTen > .up > .up_left > ul > li > a {
+  color: #666;
+}
+.newsTen > .up > .up_left a:hover {
+  color: #74a8ed;
+}
+/*右侧合作伙伴*/
+.newsTen > .up > .up_right {
+  float: left;
+  width: 924px;
+  height: 73px;
+  padding: 10px 17px 15px 18px;
+}
+.newsTen > .up > .up_right > p {
+  font-size: 18px;
+}
+.newsTen > .up > .up_right > ul {
+  width: 929px;
+  height: 40px;
+  margin-top: 9px;
+}
+.newsTen > .up > .up_right > ul > li {
+  position: relative;
+  float: left;
+  width: 154px;
+  height: 40px;
+}
+.newsTen > .up > .up_right > ul > li + li {
+  border-left: 1px dashed #ccc;
+}
+.newsTen > .up > .up_right > ul > li > a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 76px;
+  height: 28px;
+  background-image: url("../images/pic_partner.png");
+}
+.newsTen > .up > .up_right > ul > li:nth-child(1) > a {
+  background-position: 0 290px;
+}
+.newsTen > .up > .up_right > ul > li:nth-child(2) > a {
+  background-position: 0 256px;
+}
+.newsTen > .up > .up_right > ul > li:nth-child(3) > a {
+  background-position: 0 222px;
+}
+.newsTen > .up > .up_right > ul > li:nth-child(4) > a {
+  background-position: 0 188px;
+}
+.newsTen > .up > .up_right > ul > li:nth-child(5) > a {
+  background-position: 0 154px;
+}
+.newsTen > .up > .up_right > ul > li:nth-child(6) > a {
+  background-position: 0 120px;
+}
+/**/
+.newsTen > .down {
+  height: 222px;
+  padding: 10px 15px;
+  border: 1px solid;
+  border-color: transparent #ccc #ccc #ccc;
+}
+.newsTen > .down > dl.down_first {
+  height: 62px;
+}
+.newsTen > .down > dl + dl {
+  height: 31px;
+  border-top: 1px dotted #ccc;
+}
+.newsTen > .down > dl.down_first > dt {
+  float: left;
+  width: 80px;
+  height: 62px;
+  font-weight: bold;
+}
+.newsTen > .down > dl > dt {
+  float: left;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.newsTen > .down > dl > dd {
+  float: left;
+  width: 89px;
+  line-height: 31px;
+  color: #999;
+}
+.newsTen > .down > dl > dd:hover {
+  color: #74a8ed;
+  cursor: pointer;
+}
+/*侧边栏*/
+.container > aside {
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  width: 36px;
+  height: 360px;
+  z-index: 2;
+}
+aside > ul > li {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+aside > ul > li > a {
+  display: inline-block;
+  width: 24px;
+  height: 40px;
+  border-top: 1px solid #cccccc;
+}
+aside > ul > li:first-child > a {
+  border: none;
+}
+aside > ul > li > a > i.iconfont {
+  color: #ccc;
+  font-size: 22px;
+}
+aside > ul > li > a > span {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+aside > ul > li > a:hover .iconfont {
+  display: none;
+}
+aside > ul > li:hover > a > span {
+  display: block;
+  color: white;
+  background-color: rgb(41, 156, 255);
+}
